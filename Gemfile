@@ -10,6 +10,15 @@ gem 'json'
 
 gem 'hackety_hack-lessons', '~> 1.1', :require => 'hackety_hack/lessons'
 
+# Authentication gems
+gem 'omniauth'
+gem 'omniauth-linkedin'
+gem 'omniauth-twitter'
+gem 'twitter'
+gem 'fb_graph'
+gem 'omniauth-facebook'
+gem 'omniauth-github'
+
 gem 'haml-rails'
 gem 'jquery-rails'
 gem 'mongo_mapper'
@@ -53,6 +62,7 @@ group :production do
 end
 
 group :test do
+  gem 'simplecov', :require => false
   gem "mocha"
   gem "database_cleaner"
   gem "launchy"
